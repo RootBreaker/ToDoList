@@ -4,7 +4,7 @@ This is a simple Todo application built off Django (including the Django REST Fr
 
 ## Requirements
 
-- Python3
+- Python3(`https://www.python.org/downloads/`)
 - NodeJS(`https://nodejs.org/en/download/`)
 - Django(`https://www.djangoproject.com/download/`)
 - Pipenv(`https://pipenv.pypa.io/en/latest/`)
