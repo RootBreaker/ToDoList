@@ -1,3 +1,4 @@
+from os import environ
 """
 Django settings for backend project.
 
@@ -79,8 +80,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+         'NAME': environ.get('PSQL_NAME'),
+         'USER': environ.get('PSQL_USER'),
+         'PASSWORD': environ.get('PSQL_PASSWORD'),
+         'HOST': environ.get('PSQL_HOST'),
+         'PORT': environ.get('PSQL_PORT'),
     }
 }
 
